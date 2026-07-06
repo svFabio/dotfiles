@@ -393,6 +393,9 @@ plugins {
     welcome-screen location="zellij:session-manager" {
         welcome_screen true
     }
+    zellij-autolock location="https://github.com/fresh2dev/zellij-autolock/releases/latest/download/zellij-autolock.wasm" {
+        triggers "nvim|vim|v|nv"
+    }
 }
 
 // Plugins to load in the background when a new session starts
@@ -400,6 +403,9 @@ plugins {
 // eg. "https://example.com/my-plugin.wasm"
 load_plugins {
     zellij:link
+}
+load_plugins {
+    zellij-autolock
 }
 ui {
     pane_frames {
