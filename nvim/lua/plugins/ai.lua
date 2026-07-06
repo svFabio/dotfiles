@@ -18,10 +18,6 @@ return {
   },
   {
   
-    "Exafunction/windsurf.vim",
-    event = "BufEnter",
-  },
-  {
     "yetone/avante.nvim",
     event = "VeryLazy",
     build = "make",
